@@ -26,4 +26,7 @@ urlpatterns = [
 
     # Add apps urls
     path('basic/', include('basic.urls')),
+
+    # Auto reload -- keep in last
+    path('__reload__/', include('django_browser_reload.urls')),
 ]
