@@ -6,4 +6,16 @@ Basic Page
 
 {% block content %}
 <h1>All Types of Tea | Basic</h1>
+
+<div class="grid grid-cols-3 gap-4 m-4">
+    {% for tea in teas %}
+    <div class="tea-item">
+      <img src="{{ tea.image.url }}" alt="{{ tea.name }}">
+      <h3>{{ tea.name }}</h3>
+      <p>{{ tea.description }}</p>
+    </div>
+  {% endfor %}
+</div>
+
 {% endblock %}
+
