@@ -13,7 +13,6 @@ class TeaTypes(models.Model):
     )
     name = models.CharField(max_length=100)
     date_added = models.DateTimeField(default=timezone.now)
-    name = models.CharField(max_length=100)
     image = models.ImageField(upload_to='tea_images/')
     date_added = models.DateTimeField(default=timezone.now)
     types = models.CharField(max_length=2, choices=TEA_TYPE_CHOICES)
